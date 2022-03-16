@@ -1,0 +1,19 @@
+version: "3.5"
+services:
+  e3w:
+    hostname: e3w
+    image: soyking/e3w:latest
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./config.default.ini:/app/conf/config.default.ini
+    networks:
+      - e3wnet
+      - byfn
+
+networks:
+  e3wnet:
+    name: e3wnet
+  byfn:
+    external: true
+    name: byfn
