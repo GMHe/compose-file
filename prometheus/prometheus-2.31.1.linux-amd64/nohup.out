@@ -1,0 +1,114 @@
+ts=2021-11-10T02:00:12.336Z caller=main.go:366 level=error msg="Error loading config (--config.file=prometheus.yml)" err="parsing YAML file prometheus.yml: yaml: line 30: did not find expected key"
+ts=2021-11-10T02:00:47.632Z caller=main.go:366 level=error msg="Error loading config (--config.file=prometheus.yml)" err="parsing YAML file prometheus.yml: yaml: line 30: did not find expected key"
+ts=2021-11-10T02:01:59.211Z caller=main.go:366 level=error msg="Error loading config (--config.file=prometheus.yml)" err="parsing YAML file prometheus.yml: yaml: line 30: did not find expected key"
+ts=2021-11-10T02:03:51.466Z caller=main.go:366 level=error msg="Error loading config (--config.file=prometheus.yml)" err="parsing YAML file prometheus.yml: yaml: line 30: did not find expected key"
+ts=2021-11-10T02:08:27.365Z caller=main.go:406 level=info msg="No time or size retention was set so using the default time retention" duration=15d
+ts=2021-11-10T02:08:27.365Z caller=main.go:444 level=info msg="Starting Prometheus" version="(version=2.31.1, branch=HEAD, revision=411021ada9ab41095923b8d2df9365b632fd40c3)"
+ts=2021-11-10T02:08:27.365Z caller=main.go:449 level=info build_context="(go=go1.17.3, user=root@9419c9c2d4e0, date=20211105-20:35:02)"
+ts=2021-11-10T02:08:27.365Z caller=main.go:450 level=info host_details="(Linux 4.18.0-305.19.1.el8_4.x86_64 #1 SMP Wed Sep 15 15:39:39 UTC 2021 x86_64 localhost.localdomain (none))"
+ts=2021-11-10T02:08:27.365Z caller=main.go:451 level=info fd_limits="(soft=1024, hard=262144)"
+ts=2021-11-10T02:08:27.365Z caller=main.go:452 level=info vm_limits="(soft=unlimited, hard=unlimited)"
+ts=2021-11-10T02:08:27.368Z caller=web.go:542 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
+ts=2021-11-10T02:08:27.370Z caller=main.go:839 level=info msg="Starting TSDB ..."
+ts=2021-11-10T02:08:27.378Z caller=tls_config.go:195 level=info component=web msg="TLS is disabled." http2=false
+ts=2021-11-10T02:08:27.382Z caller=head.go:479 level=info component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+ts=2021-11-10T02:08:27.382Z caller=head.go:513 level=info component=tsdb msg="On-disk memory mappable chunks replay completed" duration=6.217µs
+ts=2021-11-10T02:08:27.382Z caller=head.go:519 level=info component=tsdb msg="Replaying WAL, this may take a while"
+ts=2021-11-10T02:08:27.396Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=0 maxSegment=1
+ts=2021-11-10T02:08:27.397Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=1 maxSegment=1
+ts=2021-11-10T02:08:27.397Z caller=head.go:596 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=39.849µs wal_replay_duration=15.371739ms total_replay_duration=15.475499ms
+ts=2021-11-10T02:08:27.400Z caller=main.go:866 level=info fs_type=XFS_SUPER_MAGIC
+ts=2021-11-10T02:08:27.400Z caller=main.go:869 level=info msg="TSDB started"
+ts=2021-11-10T02:08:27.400Z caller=main.go:996 level=info msg="Loading configuration file" filename=prometheus.yml
+ts=2021-11-10T02:08:27.401Z caller=main.go:1033 level=info msg="Completed loading of configuration file" filename=prometheus.yml totalDuration=892.506µs db_storage=3.835µs remote_storage=4.478µs web_handler=3.53µs query_engine=3.852µs scrape=430.477µs scrape_sd=51.067µs notify=24.218µs notify_sd=12.168µs rules=4.574µs
+ts=2021-11-10T02:08:27.401Z caller=main.go:811 level=info msg="Server is ready to receive web requests."
+ts=2021-11-10T03:04:08.991Z caller=main.go:689 level=warn msg="Received SIGTERM, exiting gracefully..."
+ts=2021-11-10T03:04:08.994Z caller=main.go:712 level=info msg="Stopping scrape discovery manager..."
+ts=2021-11-10T03:04:08.994Z caller=main.go:726 level=info msg="Stopping notify discovery manager..."
+ts=2021-11-10T03:04:08.994Z caller=main.go:748 level=info msg="Stopping scrape manager..."
+ts=2021-11-10T03:04:08.998Z caller=main.go:708 level=info msg="Scrape discovery manager stopped"
+ts=2021-11-10T03:04:08.998Z caller=main.go:722 level=info msg="Notify discovery manager stopped"
+ts=2021-11-10T03:04:08.999Z caller=manager.go:946 level=info component="rule manager" msg="Stopping rule manager..."
+ts=2021-11-10T03:04:08.999Z caller=manager.go:956 level=info component="rule manager" msg="Rule manager stopped"
+ts=2021-11-10T03:04:08.999Z caller=main.go:742 level=info msg="Scrape manager stopped"
+ts=2021-11-10T03:04:09.002Z caller=notifier.go:601 level=info component=notifier msg="Stopping notification manager..."
+ts=2021-11-10T03:04:09.002Z caller=main.go:923 level=info msg="Notifier manager stopped"
+ts=2021-11-10T03:04:09.004Z caller=main.go:935 level=info msg="See you next time!"
+ts=2021-11-10T03:04:44.487Z caller=main.go:406 level=info msg="No time or size retention was set so using the default time retention" duration=15d
+ts=2021-11-10T03:04:44.487Z caller=main.go:444 level=info msg="Starting Prometheus" version="(version=2.31.1, branch=HEAD, revision=411021ada9ab41095923b8d2df9365b632fd40c3)"
+ts=2021-11-10T03:04:44.487Z caller=main.go:449 level=info build_context="(go=go1.17.3, user=root@9419c9c2d4e0, date=20211105-20:35:02)"
+ts=2021-11-10T03:04:44.487Z caller=main.go:450 level=info host_details="(Linux 4.18.0-305.19.1.el8_4.x86_64 #1 SMP Wed Sep 15 15:39:39 UTC 2021 x86_64 localhost.localdomain (none))"
+ts=2021-11-10T03:04:44.487Z caller=main.go:451 level=info fd_limits="(soft=1024, hard=262144)"
+ts=2021-11-10T03:04:44.487Z caller=main.go:452 level=info vm_limits="(soft=unlimited, hard=unlimited)"
+ts=2021-11-10T03:04:44.491Z caller=web.go:542 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
+ts=2021-11-10T03:04:44.493Z caller=main.go:839 level=info msg="Starting TSDB ..."
+ts=2021-11-10T03:04:44.498Z caller=tls_config.go:195 level=info component=web msg="TLS is disabled." http2=false
+ts=2021-11-10T03:04:44.500Z caller=head.go:479 level=info component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+ts=2021-11-10T03:04:44.501Z caller=head.go:513 level=info component=tsdb msg="On-disk memory mappable chunks replay completed" duration=616.869µs
+ts=2021-11-10T03:04:44.501Z caller=head.go:519 level=info component=tsdb msg="Replaying WAL, this may take a while"
+ts=2021-11-10T03:04:44.515Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=0 maxSegment=2
+ts=2021-11-10T03:04:44.536Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=1 maxSegment=2
+ts=2021-11-10T03:04:44.537Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=2 maxSegment=2
+ts=2021-11-10T03:04:44.537Z caller=head.go:596 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=50.777µs wal_replay_duration=35.684095ms total_replay_duration=36.421526ms
+ts=2021-11-10T03:04:44.539Z caller=main.go:866 level=info fs_type=XFS_SUPER_MAGIC
+ts=2021-11-10T03:04:44.539Z caller=main.go:869 level=info msg="TSDB started"
+ts=2021-11-10T03:04:44.539Z caller=main.go:996 level=info msg="Loading configuration file" filename=prometheus.yml
+ts=2021-11-10T03:04:44.541Z caller=main.go:1033 level=info msg="Completed loading of configuration file" filename=prometheus.yml totalDuration=1.355454ms db_storage=4.325µs remote_storage=4.915µs web_handler=3.826µs query_engine=4.159µs scrape=865.831µs scrape_sd=60.853µs notify=32.143µs notify_sd=16.891µs rules=4.383µs
+ts=2021-11-10T03:04:44.541Z caller=main.go:811 level=info msg="Server is ready to receive web requests."
+ts=2021-11-10T03:20:16.545Z caller=main.go:689 level=warn msg="Received SIGTERM, exiting gracefully..."
+ts=2021-11-10T03:20:16.553Z caller=main.go:712 level=info msg="Stopping scrape discovery manager..."
+ts=2021-11-10T03:20:16.554Z caller=main.go:726 level=info msg="Stopping notify discovery manager..."
+ts=2021-11-10T03:20:16.554Z caller=main.go:748 level=info msg="Stopping scrape manager..."
+ts=2021-11-10T03:20:16.554Z caller=main.go:708 level=info msg="Scrape discovery manager stopped"
+ts=2021-11-10T03:20:16.554Z caller=main.go:722 level=info msg="Notify discovery manager stopped"
+ts=2021-11-10T03:20:16.555Z caller=manager.go:946 level=info component="rule manager" msg="Stopping rule manager..."
+ts=2021-11-10T03:20:16.555Z caller=main.go:742 level=info msg="Scrape manager stopped"
+ts=2021-11-10T03:20:16.555Z caller=manager.go:956 level=info component="rule manager" msg="Rule manager stopped"
+ts=2021-11-10T03:20:16.558Z caller=notifier.go:601 level=info component=notifier msg="Stopping notification manager..."
+ts=2021-11-10T03:20:16.558Z caller=main.go:923 level=info msg="Notifier manager stopped"
+ts=2021-11-10T03:20:16.559Z caller=main.go:935 level=info msg="See you next time!"
+ts=2021-11-10T03:21:01.943Z caller=main.go:406 level=info msg="No time or size retention was set so using the default time retention" duration=15d
+ts=2021-11-10T03:21:01.943Z caller=main.go:444 level=info msg="Starting Prometheus" version="(version=2.31.1, branch=HEAD, revision=411021ada9ab41095923b8d2df9365b632fd40c3)"
+ts=2021-11-10T03:21:01.944Z caller=main.go:449 level=info build_context="(go=go1.17.3, user=root@9419c9c2d4e0, date=20211105-20:35:02)"
+ts=2021-11-10T03:21:01.944Z caller=main.go:450 level=info host_details="(Linux 4.18.0-305.19.1.el8_4.x86_64 #1 SMP Wed Sep 15 15:39:39 UTC 2021 x86_64 localhost.localdomain (none))"
+ts=2021-11-10T03:21:01.944Z caller=main.go:451 level=info fd_limits="(soft=1024, hard=262144)"
+ts=2021-11-10T03:21:01.944Z caller=main.go:452 level=info vm_limits="(soft=unlimited, hard=unlimited)"
+ts=2021-11-10T03:21:01.948Z caller=web.go:542 level=info component=web msg="Start listening for connections" address=0.0.0.0:9090
+ts=2021-11-10T03:21:01.950Z caller=main.go:839 level=info msg="Starting TSDB ..."
+ts=2021-11-10T03:21:01.954Z caller=tls_config.go:195 level=info component=web msg="TLS is disabled." http2=false
+ts=2021-11-10T03:21:01.959Z caller=head.go:479 level=info component=tsdb msg="Replaying on-disk memory mappable chunks if any"
+ts=2021-11-10T03:21:01.960Z caller=head.go:513 level=info component=tsdb msg="On-disk memory mappable chunks replay completed" duration=489.05µs
+ts=2021-11-10T03:21:01.960Z caller=head.go:519 level=info component=tsdb msg="Replaying WAL, this may take a while"
+ts=2021-11-10T03:21:01.969Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=0 maxSegment=3
+ts=2021-11-10T03:21:01.999Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=1 maxSegment=3
+ts=2021-11-10T03:21:02.006Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=2 maxSegment=3
+ts=2021-11-10T03:21:02.007Z caller=head.go:590 level=info component=tsdb msg="WAL segment loaded" segment=3 maxSegment=3
+ts=2021-11-10T03:21:02.007Z caller=head.go:596 level=info component=tsdb msg="WAL replay completed" checkpoint_replay_duration=59.785µs wal_replay_duration=47.487859ms total_replay_duration=48.106462ms
+ts=2021-11-10T03:21:02.011Z caller=main.go:866 level=info fs_type=XFS_SUPER_MAGIC
+ts=2021-11-10T03:21:02.011Z caller=main.go:869 level=info msg="TSDB started"
+ts=2021-11-10T03:21:02.011Z caller=main.go:996 level=info msg="Loading configuration file" filename=prometheus.yml
+ts=2021-11-10T03:21:02.013Z caller=main.go:1033 level=info msg="Completed loading of configuration file" filename=prometheus.yml totalDuration=2.187739ms db_storage=3.637µs remote_storage=4.386µs web_handler=4.29µs query_engine=27.066µs scrape=967.888µs scrape_sd=45.954µs notify=25.039µs notify_sd=11.645µs rules=4.011µs
+ts=2021-11-10T03:21:02.013Z caller=main.go:811 level=info msg="Server is ready to receive web requests."
+ts=2021-11-10T05:07:38.606Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1636510052827 maxt=1636516800000 ulid=01FM43X4SYMFSDBKHRSV7H8H5K duration=176.68566ms
+ts=2021-11-10T05:07:38.613Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=4.24762ms
+ts=2021-11-10T05:07:38.620Z caller=checkpoint.go:97 level=info component=tsdb msg="Creating checkpoint" from_segment=0 to_segment=1 mint=1636516800000
+ts=2021-11-10T05:07:38.643Z caller=head.go:972 level=info component=tsdb msg="WAL checkpoint complete" first=0 last=1 duration=22.495086ms
+ts=2021-11-10T07:00:08.747Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1636516801037 maxt=1636524000000 ulid=01FM4AB4KFQ47Y7AWJN0G1RNDA duration=315.717225ms
+ts=2021-11-10T07:00:08.754Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=6.206474ms
+ts=2021-11-10T09:00:08.610Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1636524001036 maxt=1636531200000 ulid=01FM4H6VV30H993EF8WQ6WB7CQ duration=191.838791ms
+ts=2021-11-10T09:00:08.618Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=2.451569ms
+ts=2021-11-10T09:00:08.622Z caller=checkpoint.go:97 level=info component=tsdb msg="Creating checkpoint" from_segment=2 to_segment=3 mint=1636531200000
+ts=2021-11-10T09:00:08.681Z caller=head.go:972 level=info component=tsdb msg="WAL checkpoint complete" first=2 last=3 duration=59.331807ms
+ts=2021-11-11T01:12:19.451Z caller=main.go:996 level=info msg="Loading configuration file" filename=prometheus.yml
+ts=2021-11-11T01:12:19.627Z caller=main.go:1033 level=info msg="Completed loading of configuration file" filename=prometheus.yml totalDuration=213.747121ms db_storage=1.230708ms remote_storage=45.879µs web_handler=45.442µs query_engine=28.105µs scrape=58.027085ms scrape_sd=1.183958ms notify=451.287µs notify_sd=91.087µs rules=1.085484ms
+ts=2021-11-11T01:12:26.541Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1636531201036 maxt=1636538400000 ulid=01FM68V5KM2CH1H29GT4Y2FXCN duration=1.069717295s
+ts=2021-11-11T01:12:26.596Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=23.369969ms
+ts=2021-11-11T01:12:27.698Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1636538401037 maxt=1636545600000 ulid=01FM68V6RFBSA8MM2YXH473AR8 duration=1.058129614s
+ts=2021-11-11T01:12:27.716Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=12.744415ms
+ts=2021-11-11T01:12:27.947Z caller=compact.go:459 level=info component=tsdb msg="compact blocks" count=2 mint=1636510052827 maxt=1636524000000 ulid=01FM68V7V3Y8ANGQDMVEHXQ63R sources="[01FM43X4SYMFSDBKHRSV7H8H5K 01FM4AB4KFQ47Y7AWJN0G1RNDA]" duration=204.383014ms
+ts=2021-11-11T01:12:27.969Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01FM43X4SYMFSDBKHRSV7H8H5K
+ts=2021-11-11T01:12:27.982Z caller=db.go:1293 level=info component=tsdb msg="Deleting obsolete block" block=01FM4AB4KFQ47Y7AWJN0G1RNDA
+ts=2021-11-11T03:12:30.964Z caller=compact.go:518 level=info component=tsdb msg="write block" mint=1636589543125 maxt=1636596000000 ulid=01FM6FQ24TWEHCGAMJ04FPCSM1 duration=89.658529ms
+ts=2021-11-11T03:12:30.971Z caller=head.go:803 level=info component=tsdb msg="Head GC completed" duration=2.851884ms
+ts=2021-11-11T03:12:30.975Z caller=checkpoint.go:97 level=info component=tsdb msg="Creating checkpoint" from_segment=4 to_segment=5 mint=1636596000000
+ts=2021-11-11T03:12:31.038Z caller=head.go:972 level=info component=tsdb msg="WAL checkpoint complete" first=4 last=5 duration=63.288212ms

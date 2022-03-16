@@ -1,0 +1,17 @@
+version: '3'
+services:
+  canal-admin:
+    image: canal/canal-admin:latest
+    container_name: canal-admin
+    ports:
+      - 8089:8089
+    environment:
+      - server.port=8089
+      - canal.adminUser=admin
+      - canal.adminPasswd=123456
+      - spring.datasource.address=192.168.32.2:3307
+      - spring.datasource.database=canal_manager
+      - spring.datasource.username=canal
+      - spring.datasource.password=canal
+    volumes:
+      - /usr/local/canal-admin/logs/:/home/admin/canal-admin/logs

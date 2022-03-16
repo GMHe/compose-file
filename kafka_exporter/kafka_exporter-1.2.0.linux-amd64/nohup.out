@@ -1,0 +1,4 @@
+time="2021-11-09T20:37:07-05:00" level=info msg="Starting kafka_exporter (version=1.2.0, branch=HEAD, revision=830660212e6c109e69dcb1cb58f5159fe3b38903)" source="kafka_exporter.go:474"
+time="2021-11-09T20:37:07-05:00" level=info msg="Build context (go=go1.10.3, user=root@981cde178ac4, date=20180707-14:34:48)" source="kafka_exporter.go:475"
+time="2021-11-09T20:37:07-05:00" level=info msg="Done Init Clients" source="kafka_exporter.go:213"
+time="2021-11-09T20:37:07-05:00" level=info msg="Listening on :9308" source="kafka_exporter.go:499"

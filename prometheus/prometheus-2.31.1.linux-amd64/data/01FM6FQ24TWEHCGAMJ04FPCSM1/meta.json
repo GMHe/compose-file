@@ -1,0 +1,17 @@
+{
+	"ulid": "01FM6FQ24TWEHCGAMJ04FPCSM1",
+	"minTime": 1636589543125,
+	"maxTime": 1636596000000,
+	"stats": {
+		"numSamples": 325928,
+		"numSeries": 1710,
+		"numChunks": 1710
+	},
+	"compaction": {
+		"level": 1,
+		"sources": [
+			"01FM6FQ24TWEHCGAMJ04FPCSM1"
+		]
+	},
+	"version": 1
+}
