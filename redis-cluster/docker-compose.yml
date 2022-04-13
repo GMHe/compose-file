@@ -4,6 +4,7 @@ services:
     image: redis:5.0 # 基础镜像
     container_name: node1 # 容器名称
     working_dir: /config # 切换工作目录
+    restart: always
     environment: # 环境变量
       - PORT=6391 # 会使用config/nodes-${PORT}.conf这个配置文件
     ports: # 映射端口，对外提供服务
@@ -23,6 +24,7 @@ services:
     image: redis:5.0
     working_dir: /config
     container_name: node2
+    restart: always
     environment:
       - PORT=6392
     ports:
@@ -41,6 +43,7 @@ services:
   redis-master3:
     image: redis:5.0
     container_name: node3
+    restart: always
     working_dir: /config
     environment:
       - PORT=6393
@@ -60,6 +63,7 @@ services:
   redis-slave1:
     image: redis:5.0
     container_name: node4
+    restart: always
     working_dir: /config
     environment:
       - PORT=6394
@@ -80,6 +84,7 @@ services:
     image: redis:5.0
     working_dir: /config
     container_name: node5
+    restart: always
     environment:
       - PORT=6395
     ports:
@@ -98,6 +103,7 @@ services:
   redis-slave3:
     image: redis:5.0
     container_name: node6
+    restart: always
     working_dir: /config
     environment:
       - PORT=6396

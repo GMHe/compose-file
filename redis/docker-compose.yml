@@ -2,7 +2,7 @@ version: "3.1"
 services:
   redis:
     image: redis:5.0.5
-    restart: always
+    #restart: always
     command: redis-server /usr/local/redis/redis.conf
     ports:
       - 6379:6379
