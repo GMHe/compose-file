@@ -16,6 +16,6 @@ services:
     ports:
       - 3306:3306
     volumes:
-      - /usr/local/mysql/data:/var/lib/mysql
+      - /usr/local/mysql8/data:/var/lib/mysql
       - /etc/localtime:/etc/localtime:ro
-      - /usr/local/mysql/config/my.cnf:/etc/mysql/my.cnf
+      - /usr/local/mysql8/config/my.cnf:/etc/mysql/my.cnf
